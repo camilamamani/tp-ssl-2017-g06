@@ -9,4 +9,6 @@
   - Luciano Lisachi
   - Nicolás Pérez
   
-  **TP N1 Conversor de Temperaturas**
+ **TP N1 Conversor de Temperaturas**
+<p>Reescriba el programa de conversión de temperatura de la sección
+1.2 para que use una función de conversión.</p>
