@@ -6,7 +6,7 @@
 
 
 
-|Apellido, Nombre|Legajo|Usuario GitHUb|
+|Apellido, Nombre|Legajo|Usuario GitHub|
 |----------------|----------|----------------|
 |Hazama, Federico|160.053-9|[hazamacardozo](https://github.com/fhazamacardozo)|
 |Perez, Nicolas|147.616-6||
