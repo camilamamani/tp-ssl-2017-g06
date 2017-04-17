@@ -8,7 +8,7 @@
 
 |Apellido, Nombre|Legajo|Usuario GitHub|
 |----------------|----------|----------------|
-|Hazama, Federico|160.053-9|[hazamacardozo](https://github.com/fhazamacardozo)|
+|Hazama, Federico|160.053-9|[fhazamacardozo](https://github.com/fhazamacardozo)|
 |Perez, Nicolas|147.616-6||
 |Mamani, Camila|158.968-4|[camilamamani](https://github.com/camilamamani)|
 |Perez, Agustín Nicolás|141.431-8|[agustiin](https://github.com/agustiin)|
