@@ -1,3 +1,7 @@
+/* conversor.c
+ * Equipo 06
+ * 16/04/2017
+ */
 #include "conversor.h"
 
 float fahrToCels (int degreeFahr)
