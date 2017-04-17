@@ -4,7 +4,7 @@
 - Grupo 06.
 
 **Integrantes:**
-<h6>Usuario GitHub:</h6>
+<h6>Usuario GitHub: fhazamacardozo</h6>
 <h6>Legajo:160.053-9</h6>
 <h6>Apellido, Nombre: Hazama, Federico</h6>
 <hr>
