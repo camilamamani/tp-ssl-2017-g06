@@ -1,3 +1,8 @@
+/*Remueve Comentarios
+ *Implementación A
+ *Equipo 06
+ *20170506
+ */
 #include <stdio.h>
 int c, cAnterior;
 enum caracteres {
