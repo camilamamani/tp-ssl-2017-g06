@@ -13,14 +13,15 @@
 <p>El objetivo es diseñar una máquina de estado que remueva comentarios, implementar dos versiones, e 
 informar cual es la más eficiente mediante un benchmark</p>
 
-### Implementación A
-#### Estados como Funciones
-#### Transición con llamadas a las funciones, recursivamente.
-### Implementación B
-#### Estados como Etiquetas
-#### Transición con goto.
+**Implementación A**
+<p> Estados como Funciones</p>
+<p>Transición con llamadas a las funciones, recursivamente.</p>
 
-### Tabla Comparativa
+**Implementación B**
+<p> Estados como Etiquetas</p>
+<p>Transición con goto.</p>
+
+**Tabla Comparativa**
 
 |Tamaño de Archivo|Implementación A|Implementación B|
 |--------|----------------|----------------|
