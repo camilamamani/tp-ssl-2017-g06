@@ -10,10 +10,10 @@ RemoveCommentsA: $(OBJA)
 RemoveCommentsB: $(OBJB)
 	$(CC) -o $(PATH)$@ $(PATH)$^ $(CFLAGS)
 
-.PHONY: exec1 exce2 
+.PHONY: execA execB 
 
-exec1: 
+execA: 
 	$(PATH)RemoveCommentsA < $(PATH)Test.c > $(PATH)NoCommentA.c
 
-exec2:
+execB:
 	$(PATH)RemoveCommentsB < $(PATH)Test.c > $(PATH)NoCommentB.c
