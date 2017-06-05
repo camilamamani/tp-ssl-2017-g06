@@ -1,7 +1,7 @@
 /*Remueve Comentarios
  *Implementación B
  *Equipo 06
- *20170506
+ *20170604
  */
 #include <stdio.h>
 int c, cAnterior;
