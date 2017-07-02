@@ -7,16 +7,11 @@
 
 //sacar if y establecer precondicion pila no nula?
 StackItem pop(void){
-	if(!isEmpty())
-	    {
+	if( !isEmpty() ){
 	    	sp--;
-	    	return printf("%f\n",*(stack+sp)); 
-	    }
-		else
-	    {
-	     printf("\nStack Empty\n");
-		}
-	return 0;
+	    	return *(stack+sp); 
+	}
+	return 0;//desapareceria si establecemos precondicion
 }
 
 void push(StackItem oneItem){
@@ -24,7 +19,7 @@ void push(StackItem oneItem){
 	 sp++;
 }
 
-
+//reemplazar int por "bool"? c99 lo posee (stdbool.h), no aparece como bibliotecas a usar en el enunciado.
 int isEmpty(void){
 	return (sp == 0);
 }
