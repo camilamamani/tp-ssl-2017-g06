@@ -1,3 +1,8 @@
+ /* StackOfDoublesModule.h
+  * Equipo 06
+  * 02/07/2017
+  */
+
 #ifndef STACKOFDOUBLESMODULE_H_
 #define STACKOFDOUBLESMODULE_H_
 
