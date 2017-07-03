@@ -1,3 +1,9 @@
+
+ /* StackOfDoublesModule.c
+  * Equipo 06
+  * 02/07/2017
+  */
+
 #include "StackOfDoublesModule.h"
 #define MAXVAL 50 ///* maximum depth of val stack */
 
