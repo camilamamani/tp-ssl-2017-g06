@@ -30,6 +30,6 @@ struct Token{
  TokenValue val;
 };
 
-bool GetNextToken(Token *t);
+int GetNextToken(Token *t);
 
 #endif
