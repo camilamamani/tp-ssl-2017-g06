@@ -28,8 +28,10 @@ typedef double TokenValue;
 struct Token{
  TokenType type;
  TokenValue val;
+ char errorLexema;
 };
 
+typedef struct Token Token;
 int GetNextToken(Token *t);
 
 #endif
