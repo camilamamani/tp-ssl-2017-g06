@@ -1,10 +1,10 @@
 CC=gcc
 CFLAGS=-I.
-DEPS = conversor.h
-OBJ = main.c conversor.c 
+DEPS = StackOfDoublesModule.h scanner.h
+OBJ = calculator.c scanner.c StackOfDoublesModule.c 
 
 %.o: %.c $(DEPS)
 	$(CC) -o $@ $< $(CFLAGS)
 
-conversor: $(OBJ)
+calculator: $(OBJ)
 	gcc -o $@ $^ $(CFLAGS)
