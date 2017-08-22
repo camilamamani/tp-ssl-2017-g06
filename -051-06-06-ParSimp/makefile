@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-I.
 DEPS = StackOfCharsModule.h 
-OBJ = parser.c StackOfCharsModule.c 
+OBJ = Parser.c StackOfCharsModule.c 
 
 %.o: %.c $(DEPS)
 	$(CC) -o $@ $< $(CFLAGS)
