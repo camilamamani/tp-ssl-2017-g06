@@ -21,7 +21,7 @@ StackItem pop(void);
 
 void push(StackItem);
 
-StackItem* popString(void);
+void pushString(char *);
 
 void push(StackItem);
 
