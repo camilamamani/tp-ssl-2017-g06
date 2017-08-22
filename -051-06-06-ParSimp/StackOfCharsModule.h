@@ -1,6 +1,6 @@
  /* STACKOFCHARSMODULE.h
   * Equipo 06
-  * 02/07/2017
+  * 20/08/2017
   */
 
 #ifndef STACKOFCHARSMODULE_H_
@@ -21,12 +21,9 @@ StackItem pop(void);
 
 void push(StackItem);
 
-void pushString(char *);
+void pushString(char* );
 
-void push(StackItem);
-
-
-int isEmpty(void);//
+int isEmpty(void);
 
 int isFull(void);
 
