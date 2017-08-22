@@ -28,18 +28,18 @@ int main(){
 		switch(c=getchar()){
 			case LLAVEa:
 				putchar(c);
-				PushString("ll");
+				Push('l');
 				goto codigo;
 			case PARENTESISa:
 				putchar(c);
-				PushString("p");
+				Push('p');
 				goto codigo;
 			case CORCHETEa:
 				putchar(c);
-				PushString("c");
+				Push('c');
 				goto codigo;
 			case LLAVEc:
-				if((strcmp(PopString(),"ll"))!=0){
+				if(Pop()!='l'){
 					printf("error llave");
 					return;
 					}
@@ -47,7 +47,7 @@ int main(){
 					putchar(c);
 					goto codigo;
 			case PARENTESISc:
-				if((strcmp(PopString(),"p"))!=0){
+				if(Pop()!='p'){
 					printf("error parentesis");
 					return;
 					}
@@ -55,7 +55,7 @@ int main(){
 					putchar(c);
 					goto codigo;
 			case CORCHETEc:
-				if((strcmp(PopString(),"c"))!=0){
+				if(Pop()!='c'){
 					printf("error corchete");
 					return;
 					}
