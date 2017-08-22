@@ -73,14 +73,18 @@ int main(){
 				putchar(c);
 				goto caracter;
 			case EOF:
-				if ((strcmp(PopString(),"$"))!=0)
-					printf("error en pila");
+				goto estadoFinal;
 			default:
 				putchar(c);
 				goto codigo;
 			}
 		}
-		
+	estadoFinal:{
+		if (Pop()!='$')
+			printf("error en pila");
+		else
+			return;
+	}
 	caracter: {
 	c = getchar();
 	switch(c){
