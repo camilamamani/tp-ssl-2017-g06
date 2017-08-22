@@ -17,4 +17,7 @@ balanceo de los paréntesis, corchetes, y llaves.</p>
 <p> M=({codigo, caracter, escapeCaracter, cadena, escapeCadena,estadoInicial}, ASCII, {c,p,l,$},estadoInicial,$,estadoFinal)</p>
   
 **Especificación PushString**
-<p>PushString:  </p>
+<p>PushString:Σ*->Ø / PushString(cadena)=Ø,<br/>
+PushString(cadena)={cadena=subCadena.(caracter); subCadena € Σ*, c € Σ,<br/>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Push(c)+PushString(ubCadena)
+</p>
