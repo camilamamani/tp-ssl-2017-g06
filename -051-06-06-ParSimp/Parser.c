@@ -1,3 +1,7 @@
+/*Parser Simple
+ *Equipo 06
+ *20172108
+ */
 #include <stdio.h>
 #include <StackModule.h>
 
