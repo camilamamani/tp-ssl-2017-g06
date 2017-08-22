@@ -3,7 +3,7 @@
  *20172108
  */
 #include <stdio.h>
-#include <StackModule.h>
+#include <StackOfCharsModule.h>
 
 int c, cAnterior;
 enum caracteres {
@@ -44,7 +44,7 @@ int main(){
 				goto codigo;
 			case LLAVEc:
 				if(Pop()!='l'){
-					printf("error llave");
+					printf("Llaves desbalanceadas");
 					return;
 					}
 				else
@@ -52,7 +52,7 @@ int main(){
 					goto codigo;
 			case PARENTESISc:
 				if(Pop()!='p'){
-					printf("error parentesis");
+					printf("Parentesis desbalanceados");
 					return;
 					}
 				else
@@ -60,7 +60,7 @@ int main(){
 					goto codigo;
 			case CORCHETEc:
 				if(Pop()!='c'){
-					printf("error corchete");
+					printf("Corchetes desbalanceados");
 					return;
 					}
 				else
@@ -81,7 +81,7 @@ int main(){
 		}
 	estadoFinal:{
 		if (Pop()!='$')
-			printf("error en pila");
+			printf("Desbalanceado\n");
 		else
 			return;
 	}
