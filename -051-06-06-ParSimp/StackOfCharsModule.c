@@ -25,6 +25,11 @@ void push(StackItem oneItem){
 	 sp++;
 }
 
+void pushString(char* s){
+	for( ; *s; ++s)
+		push(*s);
+}
+
 //reemplazar int por "bool"? c99 lo posee (stdbool.h), no aparece como bibliotecas a usar en el enunciado.
 int isEmpty(void){
 	return (sp == 0);
