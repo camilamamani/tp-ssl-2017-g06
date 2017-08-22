@@ -24,7 +24,7 @@ int main(){
 	goto estadoInicial;
 	
 	estadoInicial: {
-		PushString("$");
+		Push('$');
 		goto codigo;
 	}
 	
