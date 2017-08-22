@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <StackOfCharsModule.h>
 
-int c, cAnterior;
+int c;
 enum caracteres {
 	LLAVEa = 123,
 	LLAVEc = 125,
