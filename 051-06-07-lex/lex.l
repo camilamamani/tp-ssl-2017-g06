@@ -3,7 +3,7 @@
 int addition, substraction, multiplication,division, lexerror, number;
 %}
 %%
-[0-9]+((\.[0-9]+)?)	{++number;}
+[0-9]+([\.][0-9]+)?	{++number;}
 \+	{++addition;}
 \-	{++substraction;}
 \*	{++multiplication;}
