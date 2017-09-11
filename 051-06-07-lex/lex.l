@@ -8,7 +8,7 @@ int addition, substraction, multiplication,division, lexerror, number, popResult
 \-	{++substraction;}
 \*	{++multiplication;}
 \/	{++division;}
-\n	{++popResult;)
+\n	{++popResult;}
 .|\t	{++lexerror; }
 %%
 int main(void){
