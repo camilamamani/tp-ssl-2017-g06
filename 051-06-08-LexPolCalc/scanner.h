@@ -14,7 +14,7 @@ Qué exporta:
 */
 
 enum TokenType {
-	 Number,
+	 Number = 'N',
 	 Addition='+',
 	 Multiplication='*',
 	 Substraction='-',

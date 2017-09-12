@@ -1,10 +1,9 @@
 %option noyywrap
 %{
-#include <stdio.h>
 #include "scanner.h"
 %}
 
-NUMBER [0-9]+([\.][0-9]+)?
+NUMBER [0-9]+("."[0-9]+)?
 
 %%
 {NUMBER}	{return Number;}
