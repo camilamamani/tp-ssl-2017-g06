@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -std=c11 -Wall -pedantic-errors 
+CFLAGS = -std=c11 
 BIN = calculator.exe
 OBJ = StackOfDoublesModule.o scanner.o lex.yy.o
 RM = rm -f
