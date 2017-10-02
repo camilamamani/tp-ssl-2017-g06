@@ -1,0 +1,8 @@
+char **argv
+int (*daytab) [2]
+ 
+
+
+
+
+
