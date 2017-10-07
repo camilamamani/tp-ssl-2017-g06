@@ -16,6 +16,6 @@ char name[MAXTOKEN];
 char datatype[MAXTOKEN];
 char out[1000];
 
-int gettoken();
+int GetToken();
 
 #endif
