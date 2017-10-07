@@ -1,4 +1,6 @@
  /* dcl.h
+  * Equipo 06
+  * 02/09/2017
   */
 #ifndef DCL_H
 #define DCL_H
