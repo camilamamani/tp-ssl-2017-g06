@@ -1,11 +1,10 @@
 /*dcl yacc
  *Equipo 06
- *12/11/17
+ *15/11/17
 */
 
 %{
 #include <stdio.h>
-#include <string.h>
 #define MAXTOKEN 100
 #define YYSTYPE const char*
 
@@ -18,34 +17,32 @@ char out[1000];
 %token PARENS
 %token BRACKETS
 %token NAME
-%token CADENA
 
 %%
-
-statement: END
-		| dcl END 		{printf("%s: %s %s\n", name, out, datatype);}
-		;
-
-dcl: asterisco dirdcl		{putchar('s');}	
-    | CADENA                {strcpy(datatype, $1);} 
+loop: statement
+    | loop statement
+    ;
+    
+statement: NAME dcl END
+	;
+	
+dcl: asterisco dirdcl
     ;
 
-asterisco: '*'				{strcat(out, " apuntador a");} 
-		| asterisco '*'
-		| /*vacio*/
-		;
+asterisco: 
+	| '*'	
+	| asterisco '*'
+	;
 
-dirdcl: NAME 			{strcpy(name, $1);}
+dirdcl: NAME 	
 	| '(' dcl ')' 
-	| dirdcl PARENS		{strcat(out, " funcion que regresa");}
-	| dirdcl BRACKETS	{
-						strcat(out, " arreglo");
-						strcat(out, $2);
-						strcat(out, " de ");}
+	| dirdcl PARENS		
+	| dirdcl BRACKETS	
 	;
 %%
 
-void yyerror(char *s) {
-    fprintf(stderr, "%s\n", s);
+int main(){
+	out[0] = '\0';
+	yyparse();
+	return 0;
 }
-
