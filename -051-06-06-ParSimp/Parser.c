@@ -24,7 +24,7 @@ int main(){
 	goto estadoInicial;
 	
 	estadoInicial: {
-		Push('$');
+		push('$');
 		goto codigo;
 	}
 	
@@ -32,18 +32,18 @@ int main(){
 		switch(c=getchar()){
 			case LLAVEa:
 				putchar(c);
-				Push('l');
+				push('l');
 				goto codigo;
 			case PARENTESISa:
 				putchar(c);
-				Push('p');
+				push('p');
 				goto codigo;
 			case CORCHETEa:
 				putchar(c);
-				Push('c');
+				push('c');
 				goto codigo;
 			case LLAVEc:
-				if(Pop()!='l'){
+				if(pop()!='l'){
 					printf("Llaves desbalanceadas");
 					return;
 					}
@@ -51,7 +51,7 @@ int main(){
 					putchar(c);
 					goto codigo;
 			case PARENTESISc:
-				if(Pop()!='p'){
+				if(pop()!='p'){
 					printf("Parentesis desbalanceados");
 					return;
 					}
@@ -59,7 +59,7 @@ int main(){
 					putchar(c);
 					goto codigo;
 			case CORCHETEc:
-				if(Pop()!='c'){
+				if(pop()!='c'){
 					printf("Corchetes desbalanceados");
 					return;
 					}
@@ -80,7 +80,7 @@ int main(){
 			}
 		}
 	estadoFinal:{
-		if (Pop()!='$')
+		if (pop()!='$')
 			printf("Desbalanceado\n");
 		else
 			return;
