@@ -1,6 +1,6 @@
 /*dcl yacc
  *Equipo 06
- *15/11/17
+ *20/11/17
 */
 
 %{
@@ -9,7 +9,6 @@
 #define YYSTYPE const char*
 
 char name[MAXTOKEN];
-char datatype[MAXTOKEN];
 char out[1000];
 %}
 
@@ -23,26 +22,27 @@ loop: statement
     | loop statement
     ;
     
-statement: NAME dcl END
+statement: NAME dcl END	{printf("%s: %s %s", name, out, $1); out[0] = '\0';}
 	;
 	
 dcl: asterisco dirdcl
     ;
 
 asterisco: 
-	| '*'	
-	| asterisco '*'
+	| '*'			{strcat(out, " apuntador a");}
+	| asterisco '*'		{strcat(out, " apuntador a");}
 	;
 
-dirdcl: NAME 	
+dirdcl: NAME 			{strcpy(name, $1);}
 	| '(' dcl ')' 
-	| dirdcl PARENS		
-	| dirdcl BRACKETS	
+	| dirdcl PARENS		{strcat(out, " funcion que regresa");}
+	| dirdcl BRACKETS	{strcat(out, " arreglo");
+				 strcat(out, $2);
+				 strcat(out, " de ");}
 	;
 %%
 
 int main(){
-	out[0] = '\0';
 	yyparse();
 	return 0;
 }
