@@ -7,15 +7,15 @@ VARNAME [a-zA-Z]+[a-zA-Z0-9]*
 
 %%
 [ \t]		;
-\(\)		{yylval = *yytext;
+\(\)		{yylval = yytext;
 		return PARENS;}
-\(		{yylval = *yytext;
+\(		{yylval = yytext;
 		return '(';}
-\[[0-9]*\]	{yylval = *yytext;
+\[[0-9]*\]	{yylval = yytext;
 		return BRACKETS;}
-{VARNAME}	{yylval = *yytext;
+{VARNAME}	{yylval = yytext;
 		return NAME;}
-\n 		{yylval = *yytext;
+\n 		{yylval = yytext;
 		return END;}	
 .		{return *yytext;}
 %%
