@@ -22,7 +22,7 @@ loop: statement
     | loop statement
     ;
     
-statement: NAME dcl END	{printf("%s: %s %s", name, out, $1); out[0] = '\0';}
+statement: NAME dcl END		{printf("%s: %s %s", name, out, $1); out[0] = '\0';}
 	;
 	
 dcl: asterisco dirdcl
