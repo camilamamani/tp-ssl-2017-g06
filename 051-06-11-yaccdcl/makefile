@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -std=c11 
 BIN = yaccdcl.exe
-OBJ = lex.yy.o yacc.tab.o
+OBJ =  yacc.tab.o lex.yy.o
 RM = rm -f
  
 $(BIN): $(OBJ) 
